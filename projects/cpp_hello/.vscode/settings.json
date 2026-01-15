@@ -1,0 +1,43 @@
+{
+    "C_Cpp.default.compilerPath": "/usr/bin/g++",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/usr/include",
+        "/usr/local/include"
+    ],
+    "C_Cpp.autocomplete": "default",
+    "C_Cpp.errorSquiggles": "enabled",
+    
+    "files.associations": {
+        "*.cpp": "cpp",
+        "*.h": "c",
+        "*.hpp": "cpp"
+    },
+    
+    "editor.formatOnSave": true,
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    
+    "cmake.configureOnOpen": true,
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+
+    // ========== CODE RUNNER НАСТРОЙКИ ==========
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc -std=c11 -Wall -Wextra -g $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -std=c++17 -Wall -Wextra -g $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+        "python": "python -u"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.saveAllFilesBeforeRun": false,
+    "code-runner.showExecutionMessage": true,
+    "code-runner.preserveFocus": true,
+    "code-runner.executorMapByGlob": {
+        "*.c": "cd $dir && gcc -std=c11 -Wall -Wextra -g $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+        "*.cpp": "cd $dir && g++ -std=c++17 -Wall -Wextra -g $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt"
+    }
+}

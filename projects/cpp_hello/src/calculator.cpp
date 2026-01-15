@@ -6,7 +6,6 @@
 
 using namespace std;
 
-// Этап 4: Функции для каждой операции
 double add(double a, double b) {
     return a + b;
 }
@@ -27,17 +26,16 @@ double divide(double a, double b) {
     return a / b;
 }
 
-// Этап 5: Функция для сохранения истории в файл
 void saveToHistory(double num1, double num2, char op, double result) {
     ofstream file("history.txt", ios::app);
     
     if (file.is_open()) {
-        // Получаем текущее время
+ 
         time_t now = time(0);
         char* dt = ctime(&now);
         
         file << "[" << dt;
-        file.seekp(-1, ios::cur); // Убираем перенос строки от ctime
+        file.seekp(-1, ios::cur);
         file << "] ";
         file << num1 << " " << op << " " << num2 << " = " << result << endl;
         file.close();
@@ -46,7 +44,6 @@ void saveToHistory(double num1, double num2, char op, double result) {
     }
 }
 
-// Функция для отображения истории
 void showHistory() {
     ifstream file("history.txt");
     
@@ -68,7 +65,6 @@ void showHistory() {
     }
 }
 
-// Функция для очистки истории
 void clearHistory() {
     ofstream file("history.txt", ios::trunc);
     file.close();
@@ -76,7 +72,7 @@ void clearHistory() {
 }
 
 int main() {
-    // Этап 1: Переменные для операции
+
     double num1, num2, result;
     char operation;
     string command;
@@ -91,12 +87,10 @@ int main() {
     cout << "  'выход' - завершить работу" << endl;
     cout << "========================================\n" << endl;
     
-    // Этап 3: Цикл для непрерывной работы
     while (true) {
         cout << "Введите команду или первое число: ";
         cin >> command;
         
-        // Проверка на команды
         if (command == "выход" || command == "exit") {
             cout << "\nЗавершение работы калькулятора. До свидания!" << endl;
             break;
@@ -112,7 +106,6 @@ int main() {
             continue;
         }
         
-        // Преобразуем команду в число
         try {
             num1 = stod(command);
         } catch (...) {
@@ -122,11 +115,9 @@ int main() {
             continue;
         }
         
-        // Этап 2: Ввод операции
         cout << "Введите операцию (+, -, *, /): ";
         cin >> operation;
         
-        // Проверка корректности операции
         if (operation != '+' && operation != '-' && operation != '*' && operation != '/') {
             cout << "Ошибка: Неизвестная операция!" << endl;
             continue;
@@ -135,7 +126,6 @@ int main() {
         cout << "Введите второе число: ";
         cin >> num2;
         
-        // Проверка корректности ввода второго числа
         if (cin.fail()) {
             cout << "Ошибка: Неверный ввод!" << endl;
             cin.clear();
@@ -143,8 +133,6 @@ int main() {
             continue;
         }
         
-        // Этап 2: Ветвление для выбора операции
-        // Этап 4: Использование функций
         switch (operation) {
             case '+':
                 result = add(num1, num2);
@@ -167,11 +155,9 @@ int main() {
                 continue;
         }
         
-        // Вывод результата
         cout << fixed << setprecision(2);
         cout << "\nРезультат: " << num1 << " " << operation << " " << num2 << " = " << result << "\n" << endl;
         
-        // Этап 5: Сохранение в историю
         saveToHistory(num1, num2, operation, result);
     }
     
