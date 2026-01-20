@@ -1,0 +1,271 @@
+#include <QApplication>
+#include <QWidget>
+#include <QPushButton>
+#include <QLineEdit>
+#include <QGridLayout>
+#include <QVBoxLayout>
+#include <QMessageBox>
+#include <QString>
+#include <cmath>
+
+class CalculatorEngine {
+private:
+    double currentValue;
+    double storedValue;5
+    char operation;
+    bool newNumber;
+
+public:
+    CalculatorEngine() : currentValue(0), storedValue(0), operation('\0'), newNumber(true) {}
+
+    void clear() {
+        currentValue = 0;
+        storedValue = 0;
+        operation = '\0';
+        newNumber = true;
+    }
+
+    void setCurrentValue(double value) {
+        currentValue = value;
+    }
+
+    double getCurrentValue() const {
+        return currentValue;
+    }
+
+    void setOperation(char op) {
+        if (operation != '\0' && !newNumber) {
+            calculate();
+        }
+        storedValue = currentValue;
+        operation = op;
+        newNumber = true;
+    }
+
+    bool calculate() {
+        if (operation == '\0') return true;
+
+        switch (operation) {
+            case '+':
+                currentValue = storedValue + currentValue;
+                break;
+            case '-':
+                currentValue = storedValue - currentValue;
+                break;
+            case '*':
+                currentValue = storedValue * currentValue;
+                break;
+            case '/':
+                if (currentValue == 0) {
+                    return false;
+                }
+                currentValue = storedValue / currentValue;
+                break;
+            default:
+                return false;
+        }
+        operation = '\0';
+        newNumber = true;
+        return true;
+    }
+
+    void setNewNumber(bool value) {
+        newNumber = value;
+    }
+
+    bool isNewNumber() const {
+        return newNumber;
+    }
+
+    double squareRoot() {
+        if (currentValue < 0) {
+            return -1;
+        }
+        currentValue = sqrt(currentValue);
+        newNumber = true;
+        return currentValue;
+    }
+
+    void percent() {
+        currentValue = currentValue / 100.0;
+        newNumber = true;
+    }
+
+    void negate() {
+        currentValue = -currentValue;
+    }
+};
+
+class Calculator : public QWidget {
+private:
+    QLineEdit* display;
+    CalculatorEngine engine;
+
+public:
+    Calculator(QWidget* parent = nullptr) : QWidget(parent) {
+        setWindowTitle("Калькулятор");
+        setFixedSize(320, 420);
+
+        QVBoxLayout* mainLayout = new QVBoxLayout(this);
+
+        display = new QLineEdit("0");
+        display->setReadOnly(true);
+        display->setAlignment(Qt::AlignRight);
+        display->setStyleSheet("font-size: 24px; padding: 10px; background: white;");
+        display->setMaxLength(15);
+        mainLayout->addWidget(display);
+
+        QGridLayout* buttonLayout = new QGridLayout();
+        buttonLayout->setSpacing(5);
+
+        QString buttons[5][4] = {
+            {"C", "√", "%", "/"},
+            {"7", "8", "9", "*"},
+            {"4", "5", "6", "-"},
+            {"1", "2", "3", "+"},
+            {"±", "0", ".", "="}
+        };
+
+        for (int row = 0; row < 5; row++) {
+            for (int col = 0; col < 4; col++) {
+                QPushButton* button = new QPushButton(buttons[row][col]);
+                button->setMinimumSize(70, 70);
+                button->setStyleSheet(getButtonStyle(buttons[row][col]));
+                
+                connect(button, &QPushButton::clicked, [this, row, col, buttons]() {
+                    handleButton(buttons[row][col]);
+                });
+
+                buttonLayout->addWidget(button, row, col);
+            }
+        }
+
+        mainLayout->addLayout(buttonLayout);
+    }
+
+private:
+    QString getButtonStyle(const QString& text) {
+        QString baseStyle = "font-size: 20px; font-weight: bold; border-radius: 5px;";
+        
+        if (text == "C") {
+            return baseStyle + "background: #ff6b6b; color: white;";
+        } else if (text == "=" || text == "+" || text == "-" || text == "*" || text == "/") {
+            return baseStyle + "background: #4ecdc4; color: white;";
+        } else if (text == "√" || text == "%" || text == "±") {
+            return baseStyle + "background: #95e1d3; color: white;";
+        } else {
+            return baseStyle + "background: #f8f9fa; color: #333;";
+        }
+    }
+
+    void handleButton(const QString& text) {
+        if (text >= "0" && text <= "9") {
+            handleDigit(text);
+        } else if (text == ".") {
+            handleDecimal();
+        } else if (text == "C") {
+            handleClear();
+        } else if (text == "=") {
+            handleEquals();
+        } else if (text == "+" || text == "-" || text == "*" || text == "/") {
+            handleOperation(text[0].toLatin1());
+        } else if (text == "√") {
+            handleSquareRoot();
+        } else if (text == "%") {
+            handlePercent();
+        } else if (text == "±") {
+            handleNegate();
+        }
+    }
+
+    void handleDigit(const QString& digit) {
+        if (engine.isNewNumber()) {
+            display->setText(digit);
+            engine.setNewNumber(false);
+        } else {
+            if (display->text().length() < 15) {
+                QString current = display->text();
+                if (current == "0") {
+                    display->setText(digit);
+                } else {
+                    display->setText(current + digit);
+                }
+            }
+        }
+    }
+
+    void handleDecimal() {
+        if (engine.isNewNumber()) {
+            display->setText("0.");
+            engine.setNewNumber(false);
+        } else {
+            if (!display->text().contains(".")) {
+                display->setText(display->text() + ".");
+            }
+        }
+    }
+
+    void handleClear() {
+        engine.clear();
+        display->setText("0");
+    }
+
+    void handleOperation(char op) {
+        engine.setCurrentValue(display->text().toDouble());
+        engine.setOperation(op);
+    }
+
+    void handleEquals() {
+        engine.setCurrentValue(display->text().toDouble());
+        
+        if (!engine.calculate()) {
+            QMessageBox::critical(this, "Ошибка", "Деление на ноль!");
+            engine.clear();
+            display->setText("0");
+            return;
+        }
+
+        QString result = QString::number(engine.getCurrentValue(), 'g', 10);
+        display->setText(result);
+    }
+
+    void handleSquareRoot() {
+        engine.setCurrentValue(display->text().toDouble());
+        
+        if (engine.squareRoot() < 0) {
+            QMessageBox::critical(this, "Ошибка", "Невозможно извлечь корень из отрицательного числа!");
+            engine.clear();
+            display->setText("0");
+            return;
+        }
+
+        QString result = QString::number(engine.getCurrentValue(), 'g', 10);
+        display->setText(result);
+    }
+
+    void handlePercent() {
+        engine.setCurrentValue(display->text().toDouble());
+        engine.percent();
+        
+        QString result = QString::number(engine.getCurrentValue(), 'g', 10);
+        display->setText(result);
+    }
+
+    void handleNegate() {
+        double current = display->text().toDouble();
+        engine.setCurrentValue(current);
+        engine.negate();
+        
+        QString result = QString::number(engine.getCurrentValue(), 'g', 10);
+        display->setText(result);
+    }
+};
+
+int main(int argc, char* argv[]) {
+    QApplication app(argc, argv);
+    
+    Calculator calculator;
+    calculator.show();
+    
+    return app.exec();
+}
