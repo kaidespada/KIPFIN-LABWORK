@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/calculator.dir/calculator_autogen/mocs_compilation.cpp.o CMakeFiles/calculator.dir/projects/cpp/src/calculator.cpp.o -o calculator 

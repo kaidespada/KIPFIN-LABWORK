@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/lvl1proj4.dir/lvl1proj4_autogen/mocs_compilation.cpp.o CMakeFiles/lvl1proj4.dir/projects/cpp/src/lvl1proj4.cpp.o -o lvl1proj4 
