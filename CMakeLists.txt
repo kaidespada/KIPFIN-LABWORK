@@ -15,8 +15,9 @@ file(GLOB PROJECT_SOURCES CONFIGURE_DEPENDS
 foreach(source ${PROJECT_SOURCES})
     get_filename_component(name ${source} NAME_WE)
     add_executable(${name} ${source})
-
-    if(name STREQUAL "lvl3proj1")
+    
+    # Линкуем Qt для проектов, которым он нужен
+    if(name STREQUAL "lvl3proj1" OR name STREQUAL "lvl3proj2")
         target_link_libraries(${name} PRIVATE Qt5::Widgets)
     endif()
 endforeach()

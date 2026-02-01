@@ -121,13 +121,13 @@
 },
 {
   "directory": "/home/iva/KIPFIN-LABWORK/build",
-  "command": "/usr/bin/c++  -I/home/iva/KIPFIN-LABWORK/build/lvl3proj2_autogen/include -g -std=gnu++17 -o CMakeFiles/lvl3proj2.dir/lvl3proj2_autogen/mocs_compilation.cpp.o -c /home/iva/KIPFIN-LABWORK/build/lvl3proj2_autogen/mocs_compilation.cpp",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/iva/KIPFIN-LABWORK/build/lvl3proj2_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -g -std=gnu++17 -fPIC -o CMakeFiles/lvl3proj2.dir/lvl3proj2_autogen/mocs_compilation.cpp.o -c /home/iva/KIPFIN-LABWORK/build/lvl3proj2_autogen/mocs_compilation.cpp",
   "file": "/home/iva/KIPFIN-LABWORK/build/lvl3proj2_autogen/mocs_compilation.cpp",
   "output": "CMakeFiles/lvl3proj2.dir/lvl3proj2_autogen/mocs_compilation.cpp.o"
 },
 {
   "directory": "/home/iva/KIPFIN-LABWORK/build",
-  "command": "/usr/bin/c++  -I/home/iva/KIPFIN-LABWORK/build/lvl3proj2_autogen/include -g -std=gnu++17 -o CMakeFiles/lvl3proj2.dir/projects/cpp/src/lvl3proj2.cpp.o -c /home/iva/KIPFIN-LABWORK/projects/cpp/src/lvl3proj2.cpp",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/iva/KIPFIN-LABWORK/build/lvl3proj2_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -g -std=gnu++17 -fPIC -o CMakeFiles/lvl3proj2.dir/projects/cpp/src/lvl3proj2.cpp.o -c /home/iva/KIPFIN-LABWORK/projects/cpp/src/lvl3proj2.cpp",
   "file": "/home/iva/KIPFIN-LABWORK/projects/cpp/src/lvl3proj2.cpp",
   "output": "CMakeFiles/lvl3proj2.dir/projects/cpp/src/lvl3proj2.cpp.o"
 },

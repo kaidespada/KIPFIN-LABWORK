@@ -73,7 +73,7 @@ lvl3proj2_autogen/timestamp: /usr/lib/qt5/bin/moc
 lvl3proj2_autogen/timestamp: /usr/lib/qt5/bin/uic
 lvl3proj2_autogen/timestamp: CMakeFiles/lvl3proj2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/iva/KIPFIN-LABWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target lvl3proj2"
-	/usr/bin/cmake -E cmake_autogen /home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl3proj2_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E cmake_autogen /home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl3proj2_autogen.dir/AutogenInfo.json ""
 	/usr/bin/cmake -E touch /home/iva/KIPFIN-LABWORK/build/lvl3proj2_autogen/timestamp
 
 CMakeFiles/lvl3proj2.dir/lvl3proj2_autogen/mocs_compilation.cpp.o: CMakeFiles/lvl3proj2.dir/flags.make
@@ -115,6 +115,9 @@ lvl3proj2_EXTERNAL_OBJECTS =
 lvl3proj2: CMakeFiles/lvl3proj2.dir/lvl3proj2_autogen/mocs_compilation.cpp.o
 lvl3proj2: CMakeFiles/lvl3proj2.dir/projects/cpp/src/lvl3proj2.cpp.o
 lvl3proj2: CMakeFiles/lvl3proj2.dir/build.make
+lvl3proj2: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
+lvl3proj2: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
+lvl3proj2: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13
 lvl3proj2: CMakeFiles/lvl3proj2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/iva/KIPFIN-LABWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable lvl3proj2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lvl3proj2.dir/link.txt --verbose=$(VERBOSE)
