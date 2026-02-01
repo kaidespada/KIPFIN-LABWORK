@@ -9,6 +9,8 @@
 /home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl2proj4.dir
 /home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl3proj1.dir
 /home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl3proj2.dir
+/home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl3proj3.dir
+/home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl3proj4.dir
 /home/iva/KIPFIN-LABWORK/build/CMakeFiles/main.dir
 /home/iva/KIPFIN-LABWORK/build/CMakeFiles/edit_cache.dir
 /home/iva/KIPFIN-LABWORK/build/CMakeFiles/rebuild_cache.dir
@@ -34,5 +36,9 @@
 /home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl3proj1_autogen.dir
 /home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl3proj2_autogen_timestamp_deps.dir
 /home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl3proj2_autogen.dir
+/home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl3proj3_autogen_timestamp_deps.dir
+/home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl3proj3_autogen.dir
+/home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl3proj4_autogen_timestamp_deps.dir
+/home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl3proj4_autogen.dir
 /home/iva/KIPFIN-LABWORK/build/CMakeFiles/main_autogen_timestamp_deps.dir
 /home/iva/KIPFIN-LABWORK/build/CMakeFiles/main_autogen.dir

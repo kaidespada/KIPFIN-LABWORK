@@ -1,0 +1,12 @@
+{
+    "contacts": [
+        {
+            "address": "Первомайская улица, дом 117.",
+            "email": "domerca.ru@gmail.com",
+            "id": 1,
+            "name": "Иван Олегович",
+            "phone": "+79309500799"
+        }
+    ],
+    "nextId": 2
+}

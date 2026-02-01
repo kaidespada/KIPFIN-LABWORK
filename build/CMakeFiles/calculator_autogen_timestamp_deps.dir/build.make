@@ -66,8 +66,8 @@ include CMakeFiles/calculator_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/calculator_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/calculator_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
 CMakeFiles/calculator_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
+CMakeFiles/calculator_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
 
 calculator_autogen_timestamp_deps: CMakeFiles/calculator_autogen_timestamp_deps
 calculator_autogen_timestamp_deps: CMakeFiles/calculator_autogen_timestamp_deps.dir/build.make

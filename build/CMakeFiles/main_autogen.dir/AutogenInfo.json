@@ -182,7 +182,9 @@
 		"/home/iva/KIPFIN-LABWORK/build/lvl2proj3_autogen/mocs_compilation.cpp",
 		"/home/iva/KIPFIN-LABWORK/build/lvl2proj4_autogen/mocs_compilation.cpp",
 		"/home/iva/KIPFIN-LABWORK/build/lvl3proj1_autogen/mocs_compilation.cpp",
-		"/home/iva/KIPFIN-LABWORK/build/lvl3proj2_autogen/mocs_compilation.cpp"
+		"/home/iva/KIPFIN-LABWORK/build/lvl3proj2_autogen/mocs_compilation.cpp",
+		"/home/iva/KIPFIN-LABWORK/build/lvl3proj3_autogen/mocs_compilation.cpp",
+		"/home/iva/KIPFIN-LABWORK/build/lvl3proj4_autogen/mocs_compilation.cpp"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 2,
@@ -210,7 +212,9 @@
 		"/home/iva/KIPFIN-LABWORK/build/lvl2proj3_autogen/mocs_compilation.cpp",
 		"/home/iva/KIPFIN-LABWORK/build/lvl2proj4_autogen/mocs_compilation.cpp",
 		"/home/iva/KIPFIN-LABWORK/build/lvl3proj1_autogen/mocs_compilation.cpp",
-		"/home/iva/KIPFIN-LABWORK/build/lvl3proj2_autogen/mocs_compilation.cpp"
+		"/home/iva/KIPFIN-LABWORK/build/lvl3proj2_autogen/mocs_compilation.cpp",
+		"/home/iva/KIPFIN-LABWORK/build/lvl3proj3_autogen/mocs_compilation.cpp",
+		"/home/iva/KIPFIN-LABWORK/build/lvl3proj4_autogen/mocs_compilation.cpp"
 	],
 	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/lvl3proj4.dir/lvl3proj4_autogen/mocs_compilation.cpp.o CMakeFiles/lvl3proj4.dir/projects/cpp/src/lvl3proj4.cpp.o -o lvl3proj4  /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13 
