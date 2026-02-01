@@ -66,8 +66,8 @@ include CMakeFiles/main_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/main_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/main_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
 CMakeFiles/main_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
+CMakeFiles/main_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
 
 main_autogen_timestamp_deps: CMakeFiles/main_autogen_timestamp_deps
 main_autogen_timestamp_deps: CMakeFiles/main_autogen_timestamp_deps.dir/build.make
