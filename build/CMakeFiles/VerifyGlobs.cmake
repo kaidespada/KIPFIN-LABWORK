@@ -15,6 +15,7 @@ set(OLD_GLOB
   "/home/iva/KIPFIN-LABWORK/projects/cpp/src/lvl2proj3.cpp"
   "/home/iva/KIPFIN-LABWORK/projects/cpp/src/lvl2proj4.cpp"
   "/home/iva/KIPFIN-LABWORK/projects/cpp/src/lvl3proj1.cpp"
+  "/home/iva/KIPFIN-LABWORK/projects/cpp/src/lvl3proj2.cpp"
   "/home/iva/KIPFIN-LABWORK/projects/cpp/src/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

@@ -248,6 +248,19 @@ lvl3proj1/fast:
 .PHONY : lvl3proj1/fast
 
 #=============================================================================
+# Target rules for targets named lvl3proj2
+
+# Build rule for target.
+lvl3proj2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvl3proj2
+.PHONY : lvl3proj2
+
+# fast build rule for target.
+lvl3proj2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lvl3proj2.dir/build.make CMakeFiles/lvl3proj2.dir/build
+.PHONY : lvl3proj2/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -521,6 +534,32 @@ lvl3proj1_autogen/fast:
 .PHONY : lvl3proj1_autogen/fast
 
 #=============================================================================
+# Target rules for targets named lvl3proj2_autogen_timestamp_deps
+
+# Build rule for target.
+lvl3proj2_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvl3proj2_autogen_timestamp_deps
+.PHONY : lvl3proj2_autogen_timestamp_deps
+
+# fast build rule for target.
+lvl3proj2_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lvl3proj2_autogen_timestamp_deps.dir/build.make CMakeFiles/lvl3proj2_autogen_timestamp_deps.dir/build
+.PHONY : lvl3proj2_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named lvl3proj2_autogen
+
+# Build rule for target.
+lvl3proj2_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvl3proj2_autogen
+.PHONY : lvl3proj2_autogen
+
+# fast build rule for target.
+lvl3proj2_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lvl3proj2_autogen.dir/build.make CMakeFiles/lvl3proj2_autogen.dir/build
+.PHONY : lvl3proj2_autogen/fast
+
+#=============================================================================
 # Target rules for targets named main_autogen_timestamp_deps
 
 # Build rule for target.
@@ -786,6 +825,30 @@ lvl3proj1_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lvl3proj1.dir/build.make CMakeFiles/lvl3proj1.dir/lvl3proj1_autogen/mocs_compilation.cpp.s
 .PHONY : lvl3proj1_autogen/mocs_compilation.cpp.s
 
+lvl3proj2_autogen/mocs_compilation.o: lvl3proj2_autogen/mocs_compilation.cpp.o
+.PHONY : lvl3proj2_autogen/mocs_compilation.o
+
+# target to build an object file
+lvl3proj2_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lvl3proj2.dir/build.make CMakeFiles/lvl3proj2.dir/lvl3proj2_autogen/mocs_compilation.cpp.o
+.PHONY : lvl3proj2_autogen/mocs_compilation.cpp.o
+
+lvl3proj2_autogen/mocs_compilation.i: lvl3proj2_autogen/mocs_compilation.cpp.i
+.PHONY : lvl3proj2_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+lvl3proj2_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lvl3proj2.dir/build.make CMakeFiles/lvl3proj2.dir/lvl3proj2_autogen/mocs_compilation.cpp.i
+.PHONY : lvl3proj2_autogen/mocs_compilation.cpp.i
+
+lvl3proj2_autogen/mocs_compilation.s: lvl3proj2_autogen/mocs_compilation.cpp.s
+.PHONY : lvl3proj2_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+lvl3proj2_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lvl3proj2.dir/build.make CMakeFiles/lvl3proj2.dir/lvl3proj2_autogen/mocs_compilation.cpp.s
+.PHONY : lvl3proj2_autogen/mocs_compilation.cpp.s
+
 main_autogen/mocs_compilation.o: main_autogen/mocs_compilation.cpp.o
 .PHONY : main_autogen/mocs_compilation.o
 
@@ -1050,6 +1113,30 @@ projects/cpp/src/lvl3proj1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lvl3proj1.dir/build.make CMakeFiles/lvl3proj1.dir/projects/cpp/src/lvl3proj1.cpp.s
 .PHONY : projects/cpp/src/lvl3proj1.cpp.s
 
+projects/cpp/src/lvl3proj2.o: projects/cpp/src/lvl3proj2.cpp.o
+.PHONY : projects/cpp/src/lvl3proj2.o
+
+# target to build an object file
+projects/cpp/src/lvl3proj2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lvl3proj2.dir/build.make CMakeFiles/lvl3proj2.dir/projects/cpp/src/lvl3proj2.cpp.o
+.PHONY : projects/cpp/src/lvl3proj2.cpp.o
+
+projects/cpp/src/lvl3proj2.i: projects/cpp/src/lvl3proj2.cpp.i
+.PHONY : projects/cpp/src/lvl3proj2.i
+
+# target to preprocess a source file
+projects/cpp/src/lvl3proj2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lvl3proj2.dir/build.make CMakeFiles/lvl3proj2.dir/projects/cpp/src/lvl3proj2.cpp.i
+.PHONY : projects/cpp/src/lvl3proj2.cpp.i
+
+projects/cpp/src/lvl3proj2.s: projects/cpp/src/lvl3proj2.cpp.s
+.PHONY : projects/cpp/src/lvl3proj2.s
+
+# target to generate assembly for a file
+projects/cpp/src/lvl3proj2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lvl3proj2.dir/build.make CMakeFiles/lvl3proj2.dir/projects/cpp/src/lvl3proj2.cpp.s
+.PHONY : projects/cpp/src/lvl3proj2.cpp.s
+
 projects/cpp/src/main.o: projects/cpp/src/main.cpp.o
 .PHONY : projects/cpp/src/main.o
 
@@ -1102,6 +1189,8 @@ help:
 	@echo "... lvl2proj4_autogen_timestamp_deps"
 	@echo "... lvl3proj1_autogen"
 	@echo "... lvl3proj1_autogen_timestamp_deps"
+	@echo "... lvl3proj2_autogen"
+	@echo "... lvl3proj2_autogen_timestamp_deps"
 	@echo "... main_autogen"
 	@echo "... main_autogen_timestamp_deps"
 	@echo "... calculator"
@@ -1114,6 +1203,7 @@ help:
 	@echo "... lvl2proj3"
 	@echo "... lvl2proj4"
 	@echo "... lvl3proj1"
+	@echo "... lvl3proj2"
 	@echo "... main"
 	@echo "... calculator_autogen/mocs_compilation.o"
 	@echo "... calculator_autogen/mocs_compilation.i"
@@ -1145,6 +1235,9 @@ help:
 	@echo "... lvl3proj1_autogen/mocs_compilation.o"
 	@echo "... lvl3proj1_autogen/mocs_compilation.i"
 	@echo "... lvl3proj1_autogen/mocs_compilation.s"
+	@echo "... lvl3proj2_autogen/mocs_compilation.o"
+	@echo "... lvl3proj2_autogen/mocs_compilation.i"
+	@echo "... lvl3proj2_autogen/mocs_compilation.s"
 	@echo "... main_autogen/mocs_compilation.o"
 	@echo "... main_autogen/mocs_compilation.i"
 	@echo "... main_autogen/mocs_compilation.s"
@@ -1178,6 +1271,9 @@ help:
 	@echo "... projects/cpp/src/lvl3proj1.o"
 	@echo "... projects/cpp/src/lvl3proj1.i"
 	@echo "... projects/cpp/src/lvl3proj1.s"
+	@echo "... projects/cpp/src/lvl3proj2.o"
+	@echo "... projects/cpp/src/lvl3proj2.i"
+	@echo "... projects/cpp/src/lvl3proj2.s"
 	@echo "... projects/cpp/src/main.o"
 	@echo "... projects/cpp/src/main.i"
 	@echo "... projects/cpp/src/main.s"
