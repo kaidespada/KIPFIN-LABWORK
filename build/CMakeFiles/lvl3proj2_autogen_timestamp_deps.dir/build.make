@@ -66,8 +66,8 @@ include CMakeFiles/lvl3proj2_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/lvl3proj2_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/lvl3proj2_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 CMakeFiles/lvl3proj2_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
+CMakeFiles/lvl3proj2_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 
 lvl3proj2_autogen_timestamp_deps: CMakeFiles/lvl3proj2_autogen_timestamp_deps
 lvl3proj2_autogen_timestamp_deps: CMakeFiles/lvl3proj2_autogen_timestamp_deps.dir/build.make
