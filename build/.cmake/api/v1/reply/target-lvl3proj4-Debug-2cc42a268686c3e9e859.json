@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lvl3proj2"
+			"path" : "lvl3proj4"
 		}
 	],
 	"backtrace" : 1,
@@ -79,7 +79,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-std=gnu++17"
+					"fragment" : "-g -std=gnu++17"
 				},
 				{
 					"backtrace" : 2,
@@ -98,10 +98,6 @@
 				},
 				{
 					"backtrace" : 2,
-					"define" : "QT_NO_DEBUG"
-				},
-				{
-					"backtrace" : 2,
 					"define" : "QT_WIDGETS_LIB"
 				}
 			],
@@ -109,7 +105,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/home/iva/KIPFIN-LABWORK/build/lvl3proj2_autogen/include"
+					"path" : "/home/iva/KIPFIN-LABWORK/build/lvl3proj4_autogen/include"
 				},
 				{
 					"backtrace" : 2,
@@ -156,18 +152,22 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "lvl3proj2_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "lvl3proj4_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
-			"id" : "lvl3proj2_autogen::@6890427a1f51a3e7e1df"
+			"id" : "lvl3proj4_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "lvl3proj2::@6890427a1f51a3e7e1df",
+	"id" : "lvl3proj4::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -190,8 +190,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "lvl3proj2",
-	"nameOnDisk" : "lvl3proj2",
+	"name" : "lvl3proj4",
+	"nameOnDisk" : "lvl3proj4",
 	"paths" : 
 	{
 		"build" : ".",
@@ -228,25 +228,25 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/lvl3proj2_autogen/mocs_compilation.cpp",
+			"path" : "build/lvl3proj4_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "projects/cpp/src/lvl3proj2.cpp",
+			"path" : "projects/cpp/src/lvl3proj4.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/lvl3proj2_autogen/timestamp",
+			"path" : "build/lvl3proj4_autogen/timestamp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/lvl3proj2_autogen/timestamp.rule",
+			"path" : "build/lvl3proj4_autogen/timestamp.rule",
 			"sourceGroupIndex" : 2
 		}
 	],

@@ -73,7 +73,7 @@ lvl3proj1_autogen/timestamp: /usr/lib/qt5/bin/moc
 lvl3proj1_autogen/timestamp: /usr/lib/qt5/bin/uic
 lvl3proj1_autogen/timestamp: CMakeFiles/lvl3proj1.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/iva/KIPFIN-LABWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target lvl3proj1"
-	/usr/bin/cmake -E cmake_autogen /home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl3proj1_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E cmake_autogen /home/iva/KIPFIN-LABWORK/build/CMakeFiles/lvl3proj1_autogen.dir/AutogenInfo.json Debug
 	/usr/bin/cmake -E touch /home/iva/KIPFIN-LABWORK/build/lvl3proj1_autogen/timestamp
 
 CMakeFiles/lvl3proj1.dir/lvl3proj1_autogen/mocs_compilation.cpp.o: CMakeFiles/lvl3proj1.dir/flags.make

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lvl2proj2"
+			"path" : "calculator"
 		}
 	],
 	"backtrace" : 1,
@@ -35,14 +35,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-std=gnu++17"
+					"fragment" : "-g -std=gnu++17"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/home/iva/KIPFIN-LABWORK/build/lvl2proj2_autogen/include"
+					"path" : "/home/iva/KIPFIN-LABWORK/build/calculator_autogen/include"
 				}
 			],
 			"language" : "CXX",
@@ -64,18 +64,22 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "lvl2proj2_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "calculator_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
-			"id" : "lvl2proj2_autogen::@6890427a1f51a3e7e1df"
+			"id" : "calculator_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "lvl2proj2::@6890427a1f51a3e7e1df",
+	"id" : "calculator::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -83,8 +87,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "lvl2proj2",
-	"nameOnDisk" : "lvl2proj2",
+	"name" : "calculator",
+	"nameOnDisk" : "calculator",
 	"paths" : 
 	{
 		"build" : ".",
@@ -121,25 +125,25 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/lvl2proj2_autogen/mocs_compilation.cpp",
+			"path" : "build/calculator_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "projects/cpp/src/lvl2proj2.cpp",
+			"path" : "projects/cpp/src/calculator.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/lvl2proj2_autogen/timestamp",
+			"path" : "build/calculator_autogen/timestamp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/lvl2proj2_autogen/timestamp.rule",
+			"path" : "build/calculator_autogen/timestamp.rule",
 			"sourceGroupIndex" : 2
 		}
 	],

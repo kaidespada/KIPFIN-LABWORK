@@ -73,7 +73,7 @@ calculator_autogen/timestamp: /usr/lib/qt5/bin/moc
 calculator_autogen/timestamp: /usr/lib/qt5/bin/uic
 calculator_autogen/timestamp: CMakeFiles/calculator.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/iva/KIPFIN-LABWORK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target calculator"
-	/usr/bin/cmake -E cmake_autogen /home/iva/KIPFIN-LABWORK/build/CMakeFiles/calculator_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E cmake_autogen /home/iva/KIPFIN-LABWORK/build/CMakeFiles/calculator_autogen.dir/AutogenInfo.json Debug
 	/usr/bin/cmake -E touch /home/iva/KIPFIN-LABWORK/build/calculator_autogen/timestamp
 
 CMakeFiles/calculator.dir/calculator_autogen/mocs_compilation.cpp.o: CMakeFiles/calculator.dir/flags.make

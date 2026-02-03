@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lvl1proj5"
+			"path" : "main"
 		}
 	],
 	"backtrace" : 1,
@@ -35,14 +35,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-std=gnu++17"
+					"fragment" : "-g -std=gnu++17"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/home/iva/KIPFIN-LABWORK/build/lvl1proj5_autogen/include"
+					"path" : "/home/iva/KIPFIN-LABWORK/build/main_autogen/include"
 				}
 			],
 			"language" : "CXX",
@@ -64,18 +64,22 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "lvl1proj5_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "main_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
-			"id" : "lvl1proj5_autogen::@6890427a1f51a3e7e1df"
+			"id" : "main_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "lvl1proj5::@6890427a1f51a3e7e1df",
+	"id" : "main::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -83,8 +87,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "lvl1proj5",
-	"nameOnDisk" : "lvl1proj5",
+	"name" : "main",
+	"nameOnDisk" : "main",
 	"paths" : 
 	{
 		"build" : ".",
@@ -121,25 +125,25 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/lvl1proj5_autogen/mocs_compilation.cpp",
+			"path" : "build/main_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "projects/cpp/src/lvl1proj5.cpp",
+			"path" : "projects/cpp/src/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/lvl1proj5_autogen/timestamp",
+			"path" : "build/main_autogen/timestamp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/lvl1proj5_autogen/timestamp.rule",
+			"path" : "build/main_autogen/timestamp.rule",
 			"sourceGroupIndex" : 2
 		}
 	],
